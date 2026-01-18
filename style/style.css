@@ -1,0 +1,39 @@
+/* Font Install */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* CSS Variable Color Variable */
+:root {
+    --normal-text: #FFFFFF;
+    --green-text: #00FF88;
+    --bg-deep: #1A0B2E;
+    --bg-light: #230E3D;
+    --btn-gradient-bg: linear-gradient(
+        47.64deg,
+        rgba(247, 233, 63, 1),
+        rgba(251, 9, 180, 1),
+        rgba(145, 0, 248, 1)
+    );
+}
+
+
+/* For Responsive Sections */
+/* Small devices Mobile */
+@media screen and (max-width: 576px) {
+}
+
+/* Medium devices Tab or Notebooks */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+}
+
+/* Large devices Laptop or desktop */
+@media screen and (min-width: 993px) {
+}
