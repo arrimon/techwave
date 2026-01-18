@@ -22,12 +22,88 @@ body {
         rgba(251, 9, 180, 1),
         rgba(145, 0, 248, 1)
     );
+    --text-gradient: linear-gradient(
+        47.64deg,
+        #F7E93F 0%,
+        #FB09B4 50%,
+        #9100F8 100%
+    );
+}
+
+
+/* Footer Style */
+.footer {
+    background-image: url("../assets/footer-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 412px;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-container h2 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--normal-text);
+    margin-bottom: 24px;
+}
+
+.text-gradient {
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-media ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    color: var(--normal-text);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+.social-media ul li img {
+    margin-right: 8px;
+}
+.footer-container p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 300;
+    color: var(--normal-text);
+    margin-top: 20px;
 }
 
 
 /* For Responsive Sections */
 /* Small devices Mobile */
 @media screen and (max-width: 576px) {
+    .footer {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-size: contain; */
+    }
+    .footer-container h2 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+    .footer-container p {
+        font-size: .9rem;
+        margin-bottom: 16px;
+    }
+    .social-media ul {
+        flex-wrap: wrap;
+        font-size: .9rem;
+        gap: 20px;
+        font-weight: 300;
+        margin-bottom: 32px;
+    }
 }
 
 /* Medium devices Tab or Notebooks */
