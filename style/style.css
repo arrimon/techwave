@@ -30,6 +30,7 @@ body {
     );
 }
 /* Common Style */
+
 .common-btn {
     background-image: var(--btn-gradient-bg);
     color: var(--normal-text);
@@ -143,6 +144,22 @@ header {
 /* For Responsive Sections */
 /* Small devices Mobile */
 @media screen and (max-width: 576px) {
+    /* Common css */
+    .mobile-display-hide {
+        display: none;
+    }
+    /* Navbar style */
+    .nav-bar {
+        padding: 20px 20px;
+    }
+   .bar-icon i {
+        font-size: 2rem;
+        color: var(--normal-text);
+        cursor: pointer;
+        display: block;
+    }
+    /* End */
+
     .footer {
         background-size: cover;
         background-position: center;
@@ -172,4 +189,8 @@ header {
 
 /* Large devices Laptop or desktop */
 @media screen and (min-width: 993px) {
+    /* Common style */
+    .lg-display-hide {
+        display: none;
+    }
 }
