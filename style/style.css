@@ -55,7 +55,10 @@ body {
 /* common Container Style */
 .hero-container,
 .about-container,
-.tech-wave-container {
+.tech-wave-container,
+.feature-episode-container,
+.host-container
+ {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -315,13 +318,86 @@ header {
     flex-direction: column;
     justify-content: center;
 }
+
 .rich-resources img {
     width: 40px;
     height: 40px;
 }
 
-
 /* End Tech-Wave Style */
+
+/* Start Frature Episode Style */
+.feature-episode {
+    background-color: var(--bg-deep);
+    padding: 120px 0;
+}
+
+.feature-episode-container h2 {
+    color: var(--normal-text);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.feature-episode-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 10px;
+    width: 100%;
+}
+
+.episode-item {
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.video-container {
+    border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.episode-info {
+    padding: 24px;
+    text-align: left;
+    color: var(--normal-text);
+}
+
+.episode-info h4 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.episode-info p {
+    color: var(--normal-text);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.duration {
+    color: #00ff88 !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0 !important;
+}
+
+/* End Frature Episode Style */
 
 
 /* Footer Style */
@@ -350,6 +426,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .social-media ul {
     display: flex;
     list-style: none;
@@ -361,9 +438,11 @@ header {
     font-weight: 300;
     margin-bottom: 32px;
 }
+
 .social-media ul li img {
     margin-right: 8px;
 }
+
 .footer-container p {
     font-size: 1rem;
     line-height: 1.2rem;
@@ -372,8 +451,8 @@ header {
     margin-top: 20px;
 }
 
-
 /* For Responsive Sections */
+
 /* Small devices Mobile */
 @media screen and (max-width: 576px) {
     /* Common css */
@@ -453,9 +532,13 @@ header {
         height: auto;
     }
 
-
     /* End Tech-Wave Style */
 
+    /*  */
+    .feature-episode-card{
+        flex-direction: column;
+        gap: 30px;
+    }
     /* Start Footer Style */
 
     .footer {
