@@ -388,7 +388,7 @@ header {
 }
 
 .duration {
-    color: #00ff88 !important;
+    color: var(--green-text) !important;
     font-size: 1.5rem;
     font-weight: bold;
     display: flex;
@@ -396,6 +396,66 @@ header {
     gap: 8px;
     margin-bottom: 0 !important;
 }
+
+/* Start Host Style */
+
+.host-container {
+    margin-top: 120px;
+}
+
+.host-container h2 {
+    color: var(--normal-text);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.host-content-card {
+    background-color: var(--bg-light);
+    border-radius: 16px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    gap: 24px;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+    padding: 40px;
+}
+
+.host-content h4 {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    color: var(--normal-text);
+}
+
+.host-content p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: var(--normal-text);
+}
+
+.host-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.host-icon div {
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 1px solid var(--normal-text);
+    padding: 10px;
+    border-radius: 50%;
+}
+.host-icon div img {
+    text-align: center;
+    width: 100%;
+}
+
+/* End Host Style */
 
 /* End Frature Episode Style */
 
@@ -534,11 +594,31 @@ header {
 
     /* End Tech-Wave Style */
 
-    /*  */
-    .feature-episode-card{
+    /* Episode Style */
+    
+    .feature-episode-container {
+        padding: 10px 10px;
+    }
+    .feature-episode-card {
         flex-direction: column;
         gap: 30px;
     }
+    /* Host style */
+
+    .host-container {
+        padding: 0 20px;
+    }
+    .host-content-card {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .host-icon {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
     /* Start Footer Style */
 
     .footer {
